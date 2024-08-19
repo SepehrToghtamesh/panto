@@ -34,6 +34,7 @@ body {
   color: #fff;
   font-size: 24px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 #menu ul {
@@ -44,7 +45,7 @@ body {
 
 #menu li {
   list-style: none;
-  margin-right:  30px;
+  margin-right: 30px;
 }
 
 #menu li a {
@@ -98,6 +99,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #fff;
+  font-weight: bold;
 
 }
 
@@ -132,7 +134,7 @@ body {
   font-size: 16px;
 }
 
-#search-bar #search-icon{
+#search-bar #search-icon {
   width: 30px;
   height: 30px;
   background-color: var(--color-primary);
@@ -145,7 +147,7 @@ body {
 }
 
 
-#search-bar #search-icon img{
+#search-bar #search-icon img {
   width: 16px;
   height: 16px;
   cursor: pointer;
@@ -153,13 +155,83 @@ body {
 
 
 
+/* --------why choosinga----------------- */
 
 
+#why-choosing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 120px 80px;
+  background-color: #fff;
+}
 
 
+#why-choosing-title {
+  font-size: 36px;
+  width: 350px;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: var(--color-secondry);
+}
 
-@media(max-width:800px){
-  #header{
+#why-choosing-reasons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+
+#facilities,
+#prices{
+  margin-right: 10px;
+}
+
+
+#facilities h3,
+#prices h3,
+#choices h3 {
+  font-size: 24px;
+  color: var(--color-secondry);
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+#facilities p,
+#prices p,
+#choices p{
+  color: var(--color-secondry);
+  font-size: 14px;
+  line-height: 28px;
+  text-align: left;
+  width: 240px;
+}
+
+
+#facilities span,
+#prices span,
+#choices span{
+  margin-top: 18px;
+  color: var(--color-primary);
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#facilities img,
+#prices img,
+#choices img{
+  margin-left: 5px;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* --------media------------------- */
+
+@media(max-width:800px) {
+  #header {
     width: 800px;
   }
 }
