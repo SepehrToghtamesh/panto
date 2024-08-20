@@ -84,6 +84,7 @@ const whyChoosingHandler = () => {
   );
 };
 
+
 window.addEventListener("load", () => {
   headerHandler();
   whyChoosingHandler();
