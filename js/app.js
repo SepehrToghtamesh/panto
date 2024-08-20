@@ -1,7 +1,6 @@
 const header = document.querySelector("#header");
-
 const whyChoosing = document.querySelector("#why-choosing");
-
+const bestSelling = document.querySelector("#best-selling");
 const headerHandler = () => {
   header.insertAdjacentHTML(
     "beforeend",
@@ -84,8 +83,73 @@ const whyChoosingHandler = () => {
   );
 };
 
+const bestSellingHandler = () => {
+  bestSelling.insertAdjacentHTML(
+    "beforeend",
+    `
+  <div id="best-selling-title">
+          <h2>Best Selling Product</h2>
+        </div>
+        <div id="best-selling-options">
+          <ul>
+            <li><a href="#">Chair</a></li>
+            <li><a href="#">Bed</a></li>
+            <li><a href="#">Sofa</a></li>
+            <li><a href="#">Lamp</a></li>
+          </ul>
+        </div>
+        <div id="products">
+          <div id="product">
+            <img src="../images/armchair3.png" alt="" />
+            <span>Chair</span>
+            <h4>Sakarias Armchair</h4>
+            <img src="../images/full stars.png" alt="" />
+            <div id="price-plus">
+              <span>$398</span>
+              <a href="#">+</a>
+            </div>
+          </div>
+          <div id="product">
+            <img src="../images/armchair.png" alt="" />
+            <span>Chair</span>
+            <h4>Baltsar Chair</h4>
+            <img src="../images/full stars.png" alt="" />
+            <div id="price-plus">
+              <span>$299</span>
+              <a href="#">+</a>
+            </div>
+          </div>
+          <div id="product">
+            <img src="../images/armchair1.png" alt="" />
+            <span>Chair</span>
+            <h4>Anjay Chair</h4>
+            <img src="../images/full stars.png" alt="" />
+            <div id="price-plus">
+              <span>$519</span>
+              <a href="#">+</a>
+            </div>
+          </div>
+          <div id="product">
+            <img src="../images/armchair2.png" alt="" />
+            <span>Chair</span>
+            <h4>Nyantuy Chair</h4>
+            <img src="../images/full stars.png" alt="" />
+            <div id="price-plus">
+              <span>$921</span>
+              <a href="#">+</a>
+            </div>
+          </div>
+        </div>
+        <div id="view-all">
+          <span>View all <img src="../images/Vector.png" alt="" /></span>
+        </div>
+  
+  `
+  );
+};
 
 window.addEventListener("load", () => {
   headerHandler();
   whyChoosingHandler();
+  bestSellingHandler();
 });
