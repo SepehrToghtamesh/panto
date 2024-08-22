@@ -2,6 +2,7 @@ const header = document.querySelector("#header");
 const whyChoosing = document.querySelector("#why-choosing");
 const bestSelling = document.querySelector("#best-selling");
 const experiences = document.querySelector("#experiences");
+const materials = document.querySelector("#materials");
 
 const headerHandler = () => {
   header.insertAdjacentHTML(
@@ -174,9 +175,33 @@ const experiencesHandler = () => {
   );
 };
 
+const materialsHandler = () => {
+  materials.insertAdjacentHTML(
+    "beforeend",
+    `
+  <div id="materials-desc">
+          <span class="title">Materials</span>
+          <h2>Very serious <br>materials for making <br>furniture</h2>
+          <p>
+            Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price
+          </p>
+          <span class="info">More Info <img src="../images/Vector.png" alt="" /></span>
+        </div>
+
+        <div id="materials-img">
+          <img src="../images/material2.png" alt="" class="main-img">
+          <img src="../images/material.png" alt="" class="first-img">
+          <img src="../images/material1.png" alt="" class="second-img" >
+          <img src="../images/shadow.png" alt="" class="shadow">
+        </div>
+  `
+  );
+};
+
 window.addEventListener("load", () => {
   headerHandler();
   whyChoosingHandler();
   bestSellingHandler();
   experiencesHandler();
+  materialsHandler();
 });
