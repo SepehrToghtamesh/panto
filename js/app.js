@@ -1,6 +1,8 @@
 const header = document.querySelector("#header");
 const whyChoosing = document.querySelector("#why-choosing");
 const bestSelling = document.querySelector("#best-selling");
+const experiences = document.querySelector("#experiences");
+
 const headerHandler = () => {
   header.insertAdjacentHTML(
     "beforeend",
@@ -148,8 +150,33 @@ const bestSellingHandler = () => {
   );
 };
 
+const experiencesHandler = () => {
+  experiences.insertAdjacentHTML(
+    "beforeend",
+    `
+  <div id="experiences-img">
+          <img src="../images/shadow1.png" alt="" class="shadow-top">
+          <img src="../images/experience.png" alt="" class="main-img" />
+          <img src="../images/shadow.png" alt="" class="shadow-bottom">
+        </div>
+        <div id="experiences-desc">
+          <span class="title">experiences</span>
+          <h2>we provide you the best experience</h2>
+          <p>
+            You don’t have to worry about the result because all of these
+            interiors are made by people who are professionals in their fields
+            with an elegant and lucurious style and with premium quality
+            materials
+          </p>
+          <span class="info">More Info <img src="../images/Vector.png" alt="" /></span>
+        </div>
+  `
+  );
+};
+
 window.addEventListener("load", () => {
   headerHandler();
   whyChoosingHandler();
   bestSellingHandler();
+  experiencesHandler();
 });
