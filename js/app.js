@@ -3,6 +3,7 @@ const whyChoosing = document.querySelector("#why-choosing");
 const bestSelling = document.querySelector("#best-selling");
 const experiences = document.querySelector("#experiences");
 const materials = document.querySelector("#materials");
+const clientReviews = document.querySelector("#client-reviews");
 
 const headerHandler = () => {
   header.insertAdjacentHTML(
@@ -198,10 +199,64 @@ const materialsHandler = () => {
   );
 };
 
+const clientReviewsHandler = () => {
+  clientReviews.insertAdjacentHTML(
+    "beforeend",
+    `
+  <span>Testimonials</span>
+        <h2>Our Client Reviews</h2>
+        <div id="reviews">
+          <div id="review" class="review-one">
+            <div id="review-container">
+              <div id="profile">
+                <img src="./images/client.png" alt="" />
+              </div>
+              <h4 id="client-name">Bang Upin</h4>
+              <p id="client-desc">Pedagang Asongan</p>
+              <p id="client-opinion">
+                “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan
+                terlihat mahal“
+              </p>
+              <img src="./images/stars.png" alt="" id="star" />
+            </div>
+          </div>
+          <div id="review" class="review-two">
+            <div id="review-container">
+              <div id="profile">
+                <img src="./images/client1.png" alt="" />
+              </div>
+              <h4 id="client-name">Ibuk Sukijan</h4>
+              <p id="client-desc">Ibu Rumah Tangga</p>
+              <p id="client-opinion">
+                “Makasih Panto, aku sekarang berasa tinggal di apartment karena
+                barang-barang yang terlihat mewah“
+              </p>
+              <img src="./images/stars.png" alt="" id="star" />
+            </div>
+          </div>
+          <div id="review" class="review-three">
+            <div id="review-container">
+              <div id="profile">
+                <img src="./images/client2.png" alt="" />
+              </div>
+              <h4 id="client-name">Mpok Ina</h4>
+              <p id="client-desc">Karyawan Swasta</p>
+              <p id="client-opinion">
+                “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+              </p>
+              <img src="./images/stars.png" alt="" id="star" />
+            </div>
+          </div>
+        </div>
+  `
+  );
+};
+
 window.addEventListener("load", () => {
   headerHandler();
   whyChoosingHandler();
   bestSellingHandler();
   experiencesHandler();
   materialsHandler();
+  clientReviewsHandler();
 });
