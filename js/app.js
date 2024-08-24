@@ -198,6 +198,7 @@ const materialsHandler = () => {
   `
   );
 };
+const footer = document.querySelector("footer");
 
 const clientReviewsHandler = () => {
   clientReviews.insertAdjacentHTML(
@@ -252,6 +253,64 @@ const clientReviewsHandler = () => {
   );
 };
 
+const footerHansler = () => {
+  footer.insertAdjacentHTML(
+    "beforeend",
+    `
+   <div id="top-footer">
+        <div id="logo">
+          <h4>Panto</h4>
+          <p>
+            The advantage of hiring a workspace with us is that gives you
+            comfortable service and all-around facilities.
+          </p>
+        </div>
+        <div id="services">
+          <span>Services</span>
+          <ul>
+            <li><a href="#">Email Marketing</a></li>
+            <li><a href="#">Campaigns</a></li>
+            <li><a href="#">Branding</a></li>
+          </ul>
+        </div>
+        <div id="furniture">
+          <span>Furniture</span>
+          <ul>
+            <li><a href="#">Bed</a></li>
+            <li><a href="#">Chair</a></li>
+            <li><a href="#">All</a></li>
+          </ul>
+        </div>
+        <div id="follow-us">
+          <span>Follow US</span>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="../images/facebook.png" alt="" /> Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"><img src="../images/twitter.png" alt="" /> Twitter</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../images/instagram.png" alt="" /> Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="bottom-footer">
+        <div id="copy-right"><p>Copyright &copy; 2024. Lo</p></div>
+        <div id="terms-policy">
+          <p class="terms">Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+  `
+  );
+};
+
 window.addEventListener("load", () => {
   headerHandler();
   whyChoosingHandler();
@@ -259,4 +318,5 @@ window.addEventListener("load", () => {
   experiencesHandler();
   materialsHandler();
   clientReviewsHandler();
+  footerHansler();
 });

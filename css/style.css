@@ -678,7 +678,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 110px 180px;
+  margin: 0px 180px 110px;
   padding-top: 110px;
 }
 
