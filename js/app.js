@@ -4,6 +4,7 @@ const bestSelling = document.querySelector("#best-selling");
 const experiences = document.querySelector("#experiences");
 const materials = document.querySelector("#materials");
 const clientReviews = document.querySelector("#client-reviews");
+const footer = document.querySelector("footer");
 
 const headerHandler = () => {
   header.insertAdjacentHTML(
@@ -198,7 +199,6 @@ const materialsHandler = () => {
   `
   );
 };
-const footer = document.querySelector("footer");
 
 const clientReviewsHandler = () => {
   clientReviews.insertAdjacentHTML(
